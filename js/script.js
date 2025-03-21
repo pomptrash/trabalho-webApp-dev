@@ -31,14 +31,20 @@ function darkMode() {
         imgLogo.setAttribute('src', '../assets/img/logo-uninassau-light.png');
         iconeDarkMode.classList.remove('bi-moon');
         iconeDarkMode.classList.add('bi-brightness-high');
-        navBar.classList.add('bg-dark', 'navbar-dark');
+        document.documentElement.style.setProperty('--pCardBackground', '#0a0a0a71')
+        if(navBar){
+            navBar.classList.add('bg-dark', 'navbar-dark');
+        }
         darkModeBtn.checked = true;  // Marca o botão como ativado
     } else {
         body.classList.remove('bg-dark', 'text-light');
         imgLogo.setAttribute('src', '../assets/img/logo-uninassau-dark.png');
         iconeDarkMode.classList.add('bi-moon');
         iconeDarkMode.classList.remove('bi-brightness-high');
-        navBar.classList.remove('bg-dark', 'navbar-dark');
+        document.documentElement.style.setProperty('--pCardBackground', '#ffffff99')
+        if (navBar){
+            navBar.classList.remove('bg-dark', 'navbar-dark');
+        }
     }
 
     // modo noturno (ativação/desativação)
@@ -50,13 +56,19 @@ function darkMode() {
             imgLogo.setAttribute('src', '../assets/img/logo-uninassau-light.png');
             iconeDarkMode.classList.remove('bi-moon');
             iconeDarkMode.classList.add('bi-brightness-high');
-            navBar.classList.add('bg-dark', 'navbar-dark');
+            document.documentElement.style.setProperty('--pCardBackground', '#0a0a0a71')
+            if (navBar){
+                navBar.classList.add('bg-dark', 'navbar-dark');
+            }
         } else {
             body.classList.remove('bg-dark', 'text-light');
             imgLogo.setAttribute('src', '../assets/img/logo-uninassau-dark.png');
             iconeDarkMode.classList.add('bi-moon');
             iconeDarkMode.classList.remove('bi-brightness-high');
-            navBar.classList.remove('bg-dark', 'navbar-dark');
+            document.documentElement.style.setProperty('--pCardBackground', '#ffffff71')
+            if (navBar){
+                navBar.classList.remove('bg-dark', 'navbar-dark');
+            }
         }
 
         // salva o estado atual do modo no localStorage
