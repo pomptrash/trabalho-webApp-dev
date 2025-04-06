@@ -47,7 +47,7 @@ function darkMode() {
         iconeDarkMode.classList.remove('bi-brightness-high');
         document.documentElement.style.setProperty('--pCardBackground', '#fafafad9')
         document.documentElement.style.setProperty('--pInverseColor', 'black')
-        table?.classList.add('table-dark')
+        table?.classList.remove('table-dark')
         navBar?.classList.remove('bg-dark', 'navbar-dark');
     }
 
