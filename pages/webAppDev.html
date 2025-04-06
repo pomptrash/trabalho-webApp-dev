@@ -10,21 +10,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/styleMaterias.css"/>
     <script src="../js/script.js" defer></script>
 </head>
 <body class="container">
     <header id="header"></header>
     <nav id="navbar"></nav>
-    <hr>
-    <main class="container border p-3 h-100">
-      <h1>Desenvolvimento de Apps para Internet</h1>
-      <p>
-        Professor(a): Larissa Torres Ferreira 
-        <a href="https://www.linkedin.com/in/larissatorres40/" target="_blank"> <i class=" ms-2 bi bi-linkedin"></i> </a>
-      </p>
-      
-      <p>A disciplina de Desenvolvimento de Aplicações para Internet aborda conceitos, técnicas e tecnologias para criação de aplicações web. Explora desenvolvimento front-end e back-end, linguagens como HTML, CSS, JavaScript e frameworks modernos, além de integração com bancos de dados, segurança, desempenho e boas práticas. O objetivo é capacitar os alunos a projetarem, implementar e manter aplicações web dinâmicas e responsivas.</p>
+    <main class="container border p-3 h-100 d-flex gap-5 flex-wrap">
+      <h1 class="w-100" >Desenvolvimento de Apps para Internet</h1>
+
+      <section class="container" id="detalhesMateria">
+        <p id="textoMateria">A disciplina de Desenvolvimento de Aplicações para Internet aborda conceitos, técnicas e tecnologias para criação de aplicações web. Explora desenvolvimento front-end e back-end, linguagens como HTML, CSS, JavaScript e frameworks modernos, além de integração com bancos de dados, segurança, desempenho e boas práticas. O objetivo é capacitar os alunos a projetarem, implementar e manter aplicações web dinâmicas e responsivas.</p>
+        <div id="material">
+          <h4 class="border-start p-2">Material Didático</h4>
+        </div>
+      </section>
+
+      <section oncontextmenu="return false" class="container d-flex flex-column justify-content-center align-items-center border" id="detalhesProfessor">
+        <img draggable="false" src="../assets/img/professores/larissa.png" alt="imagem do professor">
+        <div class="d-flex">
+          <p> Professor(a): Larissa Torres Ferreira </p>
+          <a href="https://www.linkedin.com/in/larissatorres40/" target="_blank"> <i class=" ms-2 bi bi-linkedin"></i> </a>
+        </div>
+        <ol>
+          <li>Coordenadora de pós graduação</li>
+          <li>Profissional de Marketing e tecnologia</li>
+          <li>Marketing Digital</li>
+          <li>Copywriter</li>
+          <li>Gestão em Marketplace e Omnichannel</li>
+          <li>Docente</li>
+        </ol>
+      </section>
     </main>
     <footer id="footer"></footer>
 </body>

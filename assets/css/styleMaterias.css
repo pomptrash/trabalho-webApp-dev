@@ -1,0 +1,21 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+#detalhesMateria{
+    flex: 1 1 500px;
+}
+
+#detalhesProfessor {
+    flex: 1 1 300px;
+    height: fit-content;
+}
+
+#detalhesProfessor img {
+    max-width: 250px;
+}
+#detalhesProfessor ol {
+    list-style-type: circle;
+}

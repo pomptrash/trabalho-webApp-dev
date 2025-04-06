@@ -1,0 +1,165 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.cardSection {
+  max-width: 50%;
+}
+
+.cardItem {
+  max-width: 300px;
+  max-height: 250px;
+  height: 50vh;
+  min-height: 200px;
+  background-color: lightgreen;
+  border: 1px solid black;
+  border-radius: 8px;
+  position: relative;
+  flex: 1 1 200px;
+}
+.cardItem:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+  box-shadow: -2px 2px 1px var(--pInverseColor),
+    -1px 1px 1px var(--pCardBackground);
+}
+
+.cardItem > p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.1rem;
+  padding-left: 5px;
+  font-weight: bold;
+  width: 90%;
+  background-color: var(--pCardBackground);
+}
+
+.cardItem:hover p {
+  font-size: 1.5rem;
+  text-shadow: -2px 2px 2px var(--pCardBackground);
+  right: 0;
+  padding: 10px 30px;
+  transition: 0.2s;
+}
+
+.gradeAulas {
+  width: 50%;
+  font-size: 0.9em;
+}
+.tableDiv::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: var(--pInverseColor);
+}
+.tableDiv::-webkit-scrollbar-thumb {
+  background-color: var(--pCardBackground);
+}
+.tableHead {
+  background-color: var(--pCardBackground);
+  color: var(--pInverseColor);
+}
+
+.tableDiv {
+  max-height: 500px;
+}
+
+.scrollAnimation {
+  opacity: 0%;
+  animation: scrollAnimation linear forwards;
+  animation-timeline: view();
+  animation-range: entry 5% cover 35%;
+}
+
+/* animação ao scrollar a página */
+
+@keyframes scrollAnimation {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+/* background dos cards */
+
+#apiext {
+  background: lightcyan url(../img/cardApiext.svg) no-repeat fixed center
+    center / cover;
+}
+
+#bancoDeDados {
+  background: lightcyan url(../img/cardBancoDeDados.svg) no-repeat fixed
+    center center / cover;
+}
+
+#javaPOO {
+  background: lightcyan url(../img/cardJavaPOO.svg) no-repeat fixed
+    center center / cover;
+}
+#moldSistemas {
+  background: lightcyan url(../img/cardModelagemDeSistemas.svg) no-repeat
+    fixed center center / cover;
+}
+#frontEndFW {
+  background: lightcyan url(../img/cardFrontEndFrameWorks.svg) no-repeat
+    fixed center center / cover;
+}
+#webAppDev {
+  background: lightcyan url(../img/cardWebAppDev.svg) no-repeat fixed
+    center center / cover;
+}
+
+footer > div > a:hover {
+  text-decoration: underline !important;
+}
+
+@media (max-width: 990px) {
+  .gradeAulas {
+    order: 2;
+    min-width: 100%;
+    flex: 1 0 300px;
+  }
+
+  .cardSection {
+    order: 3;
+    min-width: 100%;
+  }
+
+  .cardItem {
+    max-height: 200px;
+    height: 50vh;
+    background-color: lightgreen;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: relative;
+    flex: 1 1 400px;
+  }
+
+  .descricaoDoProjeto {
+    min-width: 100%;
+    order: 1;
+    flex: 1 1 300px;
+  }
+  .tableDiv {
+    min-width: 100%;
+    order: 2;
+  }
+}
+@media (max-width: 770px) {
+  .cardItem {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 590px) {
+  .gradeAulas {
+    font-size: 0.8em;
+  }
+}

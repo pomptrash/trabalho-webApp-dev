@@ -10,21 +10,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/styleMaterias.css"/>
     <script src="../js/script.js" defer></script>
 </head>
 <body class="container">
     <header id="header"></header>
     <nav id="navbar"></nav>
-    <hr>
-    <main class="container border p-3 h-100">
-      <h1>Banco De Dados</h1>
-      <p>
-        Professor(a): Gehard Saboia
-        <a href="https://www.linkedin.com/in/gerhardsaboia/" target="_blank"> <i class=" ms-2 bi bi-linkedin"></i> </a>
-      </p>
+    <main class="container border p-3 h-100 d-flex gap-5 flex-wrap">
+      <h1 class="w-100" >Banco De Dados</h1>
 
-      <p>A disciplina de Banco de Dados, no curso de Análise e Desenvolvimento de Sistemas (ADS), oferece uma imersão nos conceitos essenciais para o armazenamento, organização e manipulação de dados. Os alunos irão aprofundar-se na modelagem relacional, criação e gerenciamento de bancos de dados, bem como dominar a linguagem SQL e os processos de normalização. A segurança e integridade dos dados, junto com a otimização de consultas, também são temas centrais do curso. Além disso, a disciplina introduz elementos da administração de bancos de dados e explora tecnologias emergentes, equipando os estudantes com as habilidades necessárias para desenvolver e gerenciar sistemas que sejam tanto eficientes quanto seguros.</p>
+      <section class="container" id="detalhesMateria">
+        <p id="textoMateria">A disciplina de Banco de Dados, no curso de Análise e Desenvolvimento de Sistemas (ADS), oferece uma imersão nos conceitos essenciais para o armazenamento, organização e manipulação de dados. Os alunos irão aprofundar-se na modelagem relacional, criação e gerenciamento de bancos de dados, bem como dominar a linguagem SQL e os processos de normalização. A segurança e integridade dos dados, junto com a otimização de consultas, também são temas centrais do curso. Além disso, a disciplina introduz elementos da administração de bancos de dados e explora tecnologias emergentes, equipando os estudantes com as habilidades necessárias para desenvolver e gerenciar sistemas que sejam tanto eficientes quanto seguros.</p>
+        <div id="material">
+          <h4 class="border-start p-2">Material Didático</h4>
+        </div>
+      </section>
+
+      <section oncontextmenu="return false" class="container d-flex flex-column justify-content-center align-items-center border" id="detalhesProfessor">
+        <img draggable="false" src="../assets/img/professores/gehard.png" alt="imagem do professor">
+        <div class="d-flex">
+          <p>Professor(a): Gehard Saboia </p>
+          <a href="https://www.linkedin.com/in/gerhardsaboia/" target="_blank"> <i class=" ms-2 bi bi-linkedin"></i> </a>
+        </div>
+        <ol>
+          <li>Professor Universitário</li>
+          <li>Consultor Internacional de Educação e Tecnologia</li>
+          <li>Professor da Faculdade CDL, Unifametro, UniAteneu e Uninassau</li>
+        </ol>
+      </section>
     </main>
     <footer id="footer"></footer>
 </body>

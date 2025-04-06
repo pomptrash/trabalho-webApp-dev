@@ -10,25 +10,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/styleMaterias.css"/>
     <script src="../js/script.js" defer></script>
 </head>
 <body class="container">
     <header id="header"></header>
     <nav id="navbar"></nav>
-    <hr>
-    <main class="container border p-3 h-100">
-      <h1>APIEXT I</h1>
-      <p>
-        Professor(a): Régis Brito 
-        <a href="#"> <i class=" ms-2 bi bi-linkedin"></i> </a>
-      </p>
-      
-      <p>A disciplina de Atividades Práticas Interdisciplinares de Extensão (APIEXT) promove a aplicação prática dos conhecimentos adquiridos em sala de aula por meio de projetos interdisciplinares e ações de extensão. Envolve a integração de diferentes áreas do curso para a solução de problemas reais, incentivando o desenvolvimento de habilidades técnicas, trabalho em equipe, inovação e impacto social, aproximando os alunos do mercado e da comunidade.</p>
+    <main class="container border p-3 h-100 d-flex gap-5 flex-wrap">
+      <h1 class="w-100" >APIEXT I</h1>
 
-      <div>
+      <section class="container" id="detalhesMateria">
+        <p id="textoMateria">A disciplina de Atividades Práticas Interdisciplinares de Extensão (APIEXT) promove a aplicação prática dos conhecimentos adquiridos em sala de aula por meio de projetos interdisciplinares e ações de extensão. Envolve a integração de diferentes áreas do curso para a solução de problemas reais, incentivando o desenvolvimento de habilidades técnicas, trabalho em equipe, inovação e impacto social, aproximando os alunos do mercado e da comunidade.</p>
+        <div id="material">
+          <h4 class="border-start p-2">Material Didático</h4>
+        </div>
+      </section>
 
-      </div>
+      <section oncontextmenu="return false" class="container d-flex flex-column justify-content-center align-items-center border" id="detalhesProfessor">
+        <img draggable="false" src="../assets/img/professores/regis.png" alt="imagem do professor">
+        <div class="d-flex">
+          <p>Professor(a): Régis Brito</p>
+          <a href="https://www.linkedin.com/in/regis-brito-236727a2/"> <i class=" ms-2 bi bi-linkedin"></i> </a>
+        </div>
+        <ol>
+          <li>Formado em Ciências Econômicas pela Universidade Federal do Ceará-UFC</li>
+          <li>Mestrado em Economia pela Universidade Federal do Ceará - UFC</li>
+          <li>MBA em Gestão Comercial e Inteligência de Mercado pela Faculdade dos Diretores Lojistas - CDL</li>
+          <li>Trabalhou como Gerente de Credenciamento na HAPVIDA de 2005 a 2016, foi Gerente de Negócios na FORTBRASIL DE 2016 A 2018</li>
+          <li>Ministrou aulas nas seguintes universidades: UFC, Unifor, Unifanor, Uninassau Maracanati, Faculdade Fazped</li>
+          <li>Atualmente é Coordenador Comercial do Grupo Omnimagem</li>
+        </ol>
+      </section>
     </main>
     <footer id="footer"></footer>
 </body>

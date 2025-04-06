@@ -10,21 +10,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/styleMaterias.css"/>
     <script src="../js/script.js" defer></script>
 </head>
 <body class="container">
     <header id="header"></header>
     <nav id="navbar"></nav>
-    <hr>
-    <main class="container border p-3 h-100">
-      <h1>Front-End FrameWorks</h1>
-      <p>
-        Professor(a): Francisco Wallison
-        <a href="https://www.linkedin.com/in/wallison-francisco/" target="_blank"> <i class=" ms-2 bi bi-linkedin"></i> </a>
-      </p>
+    <main class="container border p-3 h-100 d-flex gap-5 flex-wrap">
+      <h1 class="w-100" >Front-End FrameWorks</h1>
 
-      <p>A disciplina de Front-End Frameworks aborda o desenvolvimento de interfaces web modernas e responsivas utilizando frameworks e bibliotecas especializadas. Explora conceitos de componentização, manipulação do DOM, gerenciamento de estado, integração com APIs e boas práticas de desempenho e acessibilidade. O objetivo é capacitar os alunos a criar aplicações interativas e eficientes, seguindo padrões do mercado e proporcionando uma melhor experiência ao usuário.</p>
+      <section class="container" id="detalhesMateria">
+        <p id="textoMateria">A disciplina de Front-End Frameworks aborda o desenvolvimento de interfaces web modernas e responsivas utilizando frameworks e bibliotecas especializadas. Explora conceitos de componentização, manipulação do DOM, gerenciamento de estado, integração com APIs e boas práticas de desempenho e acessibilidade. O objetivo é capacitar os alunos a criar aplicações interativas e eficientes, seguindo padrões do mercado e proporcionando uma melhor experiência ao usuário.</p>
+        <div id="material">
+          <h4 class="border-start p-2">Material Didático</h4>
+        </div>
+      </section>
+
+      <section oncontextmenu="return false" class="container d-flex flex-column justify-content-center align-items-center border" id="detalhesProfessor">
+        <img draggable="false" src="../assets/img/professores/chico.png" alt="imagem do professor">
+        <div class="d-flex">
+          <p> Professor(a): Francisco Wallison </p>
+          <a href="https://www.linkedin.com/in/wallison-francisco/" target="_blank"> <i class=" ms-2 bi bi-linkedin"></i> </a>
+        </div>
+        <ol>
+          <li>Bacharelado Sistemas de Informação</li>
+          <li>MBA Governança de TI</li>
+          <li>MBA Engenharia de Software</li>
+          <li>MBA Arquitetura de software</li>
+        </ol>
+      </section>
     </main>
     <footer id="footer"></footer>
 </body>
